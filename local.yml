@@ -7,7 +7,7 @@
   - name: update all packages
     ansible.builtin.apt:
       upgrade: dist
-      update_cach: yes
+      update_cache: true
     when: ansible_facts['distribution'] == "Ubuntu"
 
   - name: install apache 2
